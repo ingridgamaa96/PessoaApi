@@ -4,11 +4,10 @@ para rodar o projeto é necessario fazer download ou git clone
 
 ## Requisitos do projeto 
 
-#	é necessario que uma pessoa tenha todos esses dados que esta em Json
-#	e mais de um endereço vinculado a uma pessoa 
-#	e informar endereço principal dessa pessoa
-	
-	<h5> projeto em construção utilizando Java 17</h5>
+	é necessario que uma pessoa tenha todos esses dados que esta em Json
+	e mais de um endereço vinculado a uma pessoa 
+	e informar endereço principal dessa pessoa
+	projeto em construção utilizando Java 17
   
 pom.xml maven
 contém todas dependencias utilizadas no projeto 
