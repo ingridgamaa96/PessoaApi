@@ -10,15 +10,16 @@ para rodar o projeto é necessario fazer download ou git clone
 	projeto em construção utilizando Java 17
   
 pom.xml maven
+
 contém todas dependencias utilizadas no projeto 
 que são 
 
-JPA
-Lombok 
-H2
-Validation
-DevTools
-start web
+JPA <br>
+Lombok <br>
+H2<br>
+Validation<br>
+DevTools<br>
+start web<br>
 
 todas informações necessarias para acessar o banco de dados H2 em memoria está no 
 resource 
@@ -27,13 +28,13 @@ resource
 
 Collection Postman contem 
 
-Get EnderecoPessoaId 
-Get ListarPessoa (ok)
-Get ConsultarPessoaId
-Put Endereco
-Put EditarPessoa (ok) 
-Post SalvarPessoa(cadastra) (ok)
-Post SalvarEnderecoPessoa(cadastra) (ok)
+Get EnderecoPessoaId <br>
+Get ListarPessoa (ok)<br>
+Get ConsultarPessoaId<br>
+Put Endereco<br>
+Put EditarPessoa (ok) <br>
+Post SalvarPessoa(cadastra) (ok)<br>
+Post SalvarEnderecoPessoa(cadastra) (ok)<br>
 
 nem todas funcionalidades estão funcionando ainda falta o relacionamento entre as tabelas no h2 
 projeto em desenvolvimento os que tão ok, é que ja foram testados 
