@@ -19,7 +19,6 @@ public class EnderecoController {
     @Autowired
     private PessoaRepository pessoaRepository;
 
-
     @PostMapping("cadastrar")
     public ResponseEntity<Endereco> cadastrarEndereco(@RequestParam Long idPessoa, @RequestBody Endereco endereco ){
         Optional<Pessoa> pessoa = pessoaRepository.findById(idPessoa);

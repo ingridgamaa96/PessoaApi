@@ -42,8 +42,6 @@ public class Pessoa {
     public void setEndereco(List<Endereco> endereco) {
         this.endereco = endereco;
     }
-
- //@Embedded
     @OneToMany
     @JoinTable(name = "tb_endereco", joinColumns = @JoinColumn(name="pessoa_id"),inverseJoinColumns = @JoinColumn(name = "id"))
 

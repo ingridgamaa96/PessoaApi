@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "e6ec9d28-37a5-4c2f-9cc6-67f3e68a520d",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13572075"
+	},
+	"item": [
+		{
+			"name": "ENDERECO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endereco/?id=1/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1/listar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ENDERECO",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "idPessoa",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"logradouro\":\"rua 1\",\r\n   \"cep\":\"04850230\",\r\n   \"numero\":\"2\",\r\n   \"cidade\":\"São paulo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/endereco{idPessoa=2}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco{idPessoa=2}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarPessoa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarPessoa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nome\": \"savio\",\r\n    \"dataNascimento\": \"1999-07-07\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas/editar?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"editar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalvarPessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"nome\": \"nick\",\r\n    \"dataNascimento\": \"1999-07-07\",\r\n    \"endereco\": {\r\n        \"logradouro\" : \"rua 48\", \r\n        \"cep\" : \"04850230\",\r\n        \"numero\" : \"2\",\r\n        \"cidade\" : \"São paulo\"\r\n    }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarPessoaId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pessoas/consultar?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"consultar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SalvarEnderecoPessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"logradouro\" : \"rua 48\", \r\n    \"cep\" : \"04850230\",\r\n    \"numero\" : \"2\",\r\n    \"cidade\" : \"São paulo\" \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/endereco/cadastrar?idPessoa=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"cadastrar"
+					],
+					"query": [
+						{
+							"key": "idPessoa",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
