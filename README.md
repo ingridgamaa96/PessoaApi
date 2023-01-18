@@ -22,7 +22,7 @@ DevTools<br>
 start web<br>
 
 todas informações necessarias para acessar o banco de dados H2 em memoria está no 
-resource 
+resources 
 > application.properties 
 
 
